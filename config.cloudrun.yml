@@ -12,7 +12,7 @@ store:
 
     ## google cloud recommend this file only for development
     ## this field is not mandatory
-    keyFilename: key.json
+    # keyFilename: key.json
 
     ## default validation is, it can be overrided by
     ## https://cloud.google.com/nodejs/docs/reference/storage/1.6.x/File.html#createWriteStream
