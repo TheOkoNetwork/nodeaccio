@@ -46,7 +46,7 @@ class AuthCustomPlugin {
   /**
    * check grants for such user.
    */
-  allow_access(user,package,callback) {
+  allow_access(user,pkg,callback) {
     const isAllowed = true;
     callback(null, isAllowed);
   }
@@ -54,7 +54,7 @@ class AuthCustomPlugin {
   /**
    * check grants to publish
    */
-  allow_publish(user,package,callback) {
+  allow_publish(user,pkg,callback) {
     const isAllowed = true;
     callback(null, isAllowed);
   }
