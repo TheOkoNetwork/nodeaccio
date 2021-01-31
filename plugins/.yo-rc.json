@@ -1,0 +1,10 @@
+{
+  "generator-verdaccio-plugin": {
+    "promptValues": {
+      "lang": "javascript",
+      "pluginType": "storage",
+      "authorName": "Gregory Oakley-Stevenson",
+      "authorEmail": "gregory@okonetwork.org.uk"
+    }
+  }
+}

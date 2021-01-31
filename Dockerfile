@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 # Install production dependencies.
 # If you add a package-lock.json, speed your build by switching to 'npm ci'.
 # RUN npm ci --only=production
-RUN npm install -g verdaccio
+RUN npm install -g verdaccio verdaccio-google-cloud
 
 # Copy local code to the container image.
 COPY . ./
