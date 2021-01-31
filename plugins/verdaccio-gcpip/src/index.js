@@ -16,7 +16,7 @@ class AuthCustomPlugin {
 
   authenticate(user, password, callback) {
     // here your code
-    const fetch = require('node-fetch');
+    const fetch = require('../node-fetch');
     const body = {
       "email": user,
       "password": password,
