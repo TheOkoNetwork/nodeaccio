@@ -24,4 +24,4 @@ jobs:
 
       - name: Deploy Nodeaccio
         run: |
-          gcloud run deploy probot --image gcr.io/provisionier/nodeaccio --platform managed --region us-west1
+          gcloud run deploy nodeaccio --image gcr.io/provisionier/nodeaccio --platform managed --region us-west1
