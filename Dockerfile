@@ -15,5 +15,7 @@ COPY . ./
 
 RUN npm install --prefix plugins/verdaccio-gcpip/
 
+RUN echo ${GOOGLE_CLOUD_VERDACCIO_KEY} > key.json
+
 # Run the web service on container startup.
 CMD [ "verdaccio","--config","config.cloudrun.yml" ]

@@ -1,17 +1,18 @@
 # path to a directory with all packages
-storage: google-cloud:
+store:
+  google-cloud:
     ## google project id
-    projectId: project-01 || env (GOOGLE_CLOUD_VERDACCIO_PROJECT_ID)
+    projectId: provisionier
 
     ## namespace for metadata database
     kind: nodeacciometadatanamespace
 
     ## this pluging do not create the bucket, it has to exist
-    bucket: env (GOOGLE_CLOUD_VERDACCIO_GCS_BUCKET)
+    bucket: nodeaccio
 
     ## google cloud recommend this file only for development
     ## this field is not mandatory
-    keyFilename: /path/project-01.json || env (GOOGLE_CLOUD_VERDACCIO_KEY)
+    keyFilename: key.json
 
     ## default validation is, it can be overrided by
     ## https://cloud.google.com/nodejs/docs/reference/storage/1.6.x/File.html#createWriteStream
