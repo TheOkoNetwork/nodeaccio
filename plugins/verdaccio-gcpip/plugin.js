@@ -18,7 +18,7 @@ class AuthCustomPlugin {
     // here your code
     const fetch = require('node-fetch');
     const body = {
-      "email": user,
+      "email": `${user}@nodeaccio.okonetwork.org.uk`,
       "password": password,
       "returnSecureToken":true,
       // @todo use an environment variable for the tenant id
