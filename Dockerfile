@@ -13,5 +13,7 @@ RUN npm install -g verdaccio
 # Copy local code to the container image.
 COPY . ./
 
+RUN npm install --prefix plugins/verdaccio-gcpip/
+
 # Run the web service on container startup.
 CMD [ "verdaccio","--config","config.cloudrun.yml" ]
