@@ -14,7 +14,9 @@ plugins: ./plugins
 
 listen:
   0.0.0.0:8080
-  
+
+max_body_size: 1000mb
+
 web:
   title: Nodeaccio
   darkMode: true
